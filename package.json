@@ -1,0 +1,21 @@
+{
+  "name": "score-viewer",
+  "version": "1.0.0",
+  "description": "ScoreViewer Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vasyl Yefimenko <rednez@gmail.com>",
+  "license": "ISC",
+  "workspaces": [
+    "./apps/*"
+  ],
+  "volta": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
