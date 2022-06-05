@@ -1,0 +1,43 @@
+@import-normalize;
+
+:root {
+  --primary-alternative: #5f5aaa;
+  --gray: #848ba4;
+  --black-56: rgba(0, 0, 0, 0.56);
+  --gray-light: #dee4eb;
+  --success: #288f28;
+  --primary: #4b4789;
+  --white: #ffffff;
+  --black-87: rgba(0, 0, 0, 0.87);
+  --error: #c24a4a;
+  --black-48: rgba(0, 0, 0, 0.48);
+  --accent: #e6842e;
+  --primary-pale: #f1f0fb;
+  --info: #3987bf;
+
+  --font-size-display: 1.25rem; /* 20px*/
+  --font-size-body: 0.875rem; /* 14px*/
+  --font-size-auxiliary: 0.8125rem; /* 13px*/
+  --font-size-smallprint: 0.75rem; /* 12px*/
+  --font-size-tinyprint: 0.6875rem; /* 11px*/
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: var(--black-87);
+  /*background-image: linear-gradient(to top, #fef8e4, var(--primary-pale));*/
+  background-color: #e7e4d0;
+}

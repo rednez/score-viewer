@@ -8,9 +8,11 @@ const company = ({ company, ...findings }) => {
     const score =
       findings[issuesImpactsKey] *
       issuesImpacts[issuesImpactsKey].impact_per_finding;
+
     issueTypes.push({
       key: issuesImpactsKey,
       score,
+      findings: findings[issuesImpactsKey],
       name: issuesImpacts[issuesImpactsKey].name,
     });
   }

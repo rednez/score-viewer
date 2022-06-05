@@ -12,10 +12,14 @@ const companiesResponse = (req, res) => {
   const orderQuery = getOrderQuery(req.query.order);
   const companies = companiesFindings.map(company);
 
-  return res.json(
-    isSortByQueryValid(sortByQuery)
-      ? lodash.orderBy(companies, [sortByQuery], [orderQuery])
-      : companies
+  return setTimeout(
+    () =>
+      res.json(
+        isSortByQueryValid(sortByQuery)
+          ? lodash.orderBy(companies, [sortByQuery], [orderQuery])
+          : companies
+      ),
+    300
   );
 };
 
