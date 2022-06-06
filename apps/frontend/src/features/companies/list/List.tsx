@@ -78,7 +78,7 @@ export function List() {
             <TableRow
               key={row.company}
               hover
-              onClick={(event) => handleTableRowClick(row.company)}
+              onClick={() => handleTableRowClick(row.company)}
             >
               <TableCell>{row.company}</TableCell>
               <TableCell sx={{ display: 'flex' }}>

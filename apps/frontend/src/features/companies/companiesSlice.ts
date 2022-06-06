@@ -30,7 +30,7 @@ export const companiesSlice = createSlice({
       state.status = 'idle';
       state.data = action.payload;
     },
-    loadCompaniesFailed: (state, action) => {
+    loadCompaniesFailed: (state) => {
       state.status = 'failed';
       state.data = [];
     },

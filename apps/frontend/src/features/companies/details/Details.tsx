@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import ArrowBack from '@mui/icons-material/ArrowBack';
 import { useAppSelector } from '../../../app/hooks';
-import { selectCurrentCompany, setCurrentCompany } from '../companiesSlice';
+import { selectCurrentCompany } from '../companiesSlice';
 import { IssuesTypesHeader } from './IssuesTypesHeader';
 import { IssueTypeItem } from './IssueTypeItem';
 import { TotalScore } from './TotalScore';
